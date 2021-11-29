@@ -68,7 +68,7 @@ button:hover {
 
 .moves {
   margin-top: 5rem;
-  border: 1px red solid;
+
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;

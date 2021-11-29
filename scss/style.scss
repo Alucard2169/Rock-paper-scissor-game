@@ -2,10 +2,13 @@
 
 *{
     font-family: 'Outfit', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .icon{
-    width: 5rem;
+    width: 2rem;
 }
 
 body{
@@ -18,19 +21,26 @@ body{
 
 .container{
     width: 100%;
-    height: 50rem;
     display: flex;
     flex-direction: column;
 }
 
 .main-heading{
-    margin: 0 auto;
-    font-size: 5rem;
+    margin: 5rem auto;
+    font-size: 1.3rem;
+}
+
+.score{
+    margin: 41rem 0 0 5rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .sub-heading{
-    margin: 10% 10% 0;
-    font-size: 2rem;
+    margin: 1rem;
+    font-size: 1rem;
     display: block;
 }
 
@@ -44,6 +54,7 @@ button:hover{
 .moves{
 
     margin-top: 5rem;
+    border: 1px red solid;
     height: auto;
     display: flex;
     gap: 1rem;
@@ -54,8 +65,8 @@ button:hover{
         
         button{
             border: none;
-            width: 10rem;
-            height: 10rem;
+            width: 4rem;
+            height: 4rem;
             border-radius: 100%;
             position: absolute;
     
@@ -63,13 +74,13 @@ button:hover{
         }
 
         .rock_button{
-            margin: 2rem 0 0 10rem;
+            margin: 2rem 0 0 4rem;
         }
         .scissors_button{
-            margin: 12rem 0 0 2rem;
+            margin: 7rem 0 0 1rem;
         }
         .paper_button{
-            margin: 12rem 0 0 18rem;
+            margin: 7rem 0 0 7.5rem;
          }
     }
 
@@ -79,9 +90,12 @@ button:hover{
         border: 5px white dotted;
         width: 10rem;
         height: 4rem;
-        margin: 15rem 0 0 45rem;
+        margin: -7rem 0 0 6rem;
         text-align: center;
-        
+
+        #result{
+            margin-top: 1rem;
+        }
     }
 
     
@@ -91,14 +105,14 @@ button:hover{
         position: relative;
 
         .computer{
-            margin-left: 25rem;
+            margin-left: 2rem;
         }
         .image-container{
             background: white;
-            width: 10rem;
-            height: 10rem;
+            width: 5rem;
+            height: 5rem;
             border-radius: 100%;
-            margin: 5rem 0 0 28rem;
+            margin: 4.5rem 0 0 4rem;
 
             #computer_moves{
                 position: absolute;
@@ -111,9 +125,84 @@ button:hover{
 
 
 .score{
-    margin: 41rem 0 0 5rem;
+    margin: 35rem 0 0 1rem;
     position: absolute;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+
+
+
+@media only screen and(min-width: 1400px){
+    
+    .icon{
+        width: 5rem;
+    }
+    .main-heading{
+        margin: 0 auto;
+        font-size: 5rem;
+    }
+    .sub-heading{
+        margin: 10% 10% 0;
+        font-size: 2rem;
+        display: block;
+    }
+
+
+    .moves{
+
+        margin-top: 5rem;
+
+        .for_user{
+            button{
+                width: 10rem;
+                height: 10rem;
+            }
+    
+            .rock_button{
+                margin: 2rem 0 0 10rem;
+            }
+            .scissors_button{
+                margin: 12rem 0 0 1rem;
+            }
+            .paper_button{
+                margin: 12rem 0 0 18rem;
+             }
+        }
+
+
+        #result-container{
+            margin: 15rem 0 0 45rem;
+        }
+
+        .for_computer{
+            width: 50%;
+            height: auto;
+            position: relative;
+    
+            .computer{
+                margin-left: 25rem;
+            }
+            .image-container{
+  
+                width: 10rem;
+                height: 10rem;
+                border-radius: 100%;
+                margin: 5rem 0 0 28rem;
+    
+                #computer_moves{
+                    position: absolute;
+                    margin: 2.1rem;
+                }
+            }
+            }
+
+            
+            .score{
+                margin: 41rem 0 0 5rem;
+            }
+
+    }
 }

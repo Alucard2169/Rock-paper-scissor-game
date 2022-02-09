@@ -2,53 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="main.js" defer></script>
-    <link href="scss/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Rock-paper-scissors game</title>
+    <title>Rock Paper Scissor</title>
 </head>
 <body>
-<div class="container">
-    <h1 class="main-heading">
-        ROCK-PAPER-SCISSORS GAME
-    </h1>
 
-
+    <h1 class="game_name">ROCK PAPER SCISSORS</h1>
     <div class="moves">
-    <section class="for_user">
-        <span class="sub-heading user">
-            Please choose your move
-        </span>
-        <button class="rock_button" id="rock">
-            <img class="rock icon" src="icons/hand-rock-solid.svg" alt="rock">
-        </button>
+        <div class="user_moves">
+            <button class="rock">ROCK</button>
+            <button class="paper">PAPER</button>
+            <button class="scissors">SCISSORS</button>
+        </div>
 
-        <button class="paper_button" id="paper">
-            <img class="paper icon" src="icons/hand-paper-solid.svg" alt="paper">
-        </button>
+        <div class="result">
+                <p class="display">hello</p>
+        </div>
 
-        <button class="scissors_button" id="scissors">
-            <img class="scissors icon" src="icons/hand-scissors-solid.svg" alt="scissors">
-        </button>
-    </section>
-
-
-    <div id="result-container"><h2 id="result">Result</h2></div>
-
-
-    <section class="for_computer">
-       <span class="sub-heading computer">Computer's move</span>
-       <div class='image-container'>
-        <img id="computer_moves" class="icon" src="">
-       </div>
-    </section>
+        <div class="computer_move">
+            <span class="computer_display">😈</span>
+        </div>
     </div>
-</div>
 
-<div class="score">
-<span>User Score: <span id="user"></span> </span>
-<span>Computer Score: <span id="computer"></span> </span>
-</div>
+
+    <div class="scores">
+        <span class="user">user score:<span class="u"></span> </span>
+        <span class="computer">computer score:<span class="p"></span> </span>
+    </div>
 </body>
-</html>
+</html

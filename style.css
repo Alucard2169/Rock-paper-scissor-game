@@ -82,15 +82,47 @@ button,
     border-left: 1px white solid;
 }
 
-.scores{
-    margin-top: 8rem;
-   align-self: center;
-   display: flex;
-   gap: 1rem;
-   flex-direction: column;
+.scores {
+    margin-top: 10rem;
+    align-self: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    text-align: right;
 }
 
-.click{
+.click {
     transform: scale(1.1);
     box-shadow: 0 0 10px rgb(19, 19, 19);
+}
+
+@media only screen and (max-width: 500px) {
+    .game_name {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .moves {
+        margin: 2rem 0 0;
+        border: 1px red solid;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .computer_move {
+        margin: 0;
+    }
+
+    .result {
+        margin: 1rem 0;
+    }
+
+    .user_moves {
+        width: 100%;
+        border: 1px red solid;
+    }
+
+    .scores {
+        margin-top: 2rem;
+    }
 }

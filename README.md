@@ -14,3 +14,8 @@
 ## Mobile Version
 
 ![Mobile Version Preview](https://github.com/Alucard2169/Rock-paper-scissor-game/blob/main/mobile%20version.png)
+
+
+# Basic functionality
+
+- the user chooses moves between Rock, paper or scissors and the Computer chooses randomly from the same moves and according to the rules who ever wins gets one point.
